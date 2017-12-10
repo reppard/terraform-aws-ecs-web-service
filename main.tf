@@ -40,6 +40,7 @@ resource "aws_alb_target_group" "main" {
     protocol            = "HTTP"
     timeout             = "3"
     path                = "${var.health_check_path}"
+    matcher             = "${var.health_check_matcher}"
     unhealthy_threshold = "2"
   }
 

@@ -22,6 +22,10 @@ variable "health_check_path" {
   default = "/"
 }
 
+variable "health_check_matcher" {
+  default = "200"
+}
+
 variable "port" {}
 
 variable "ssl_certificate_arn" {}
